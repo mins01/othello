@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+table#board{ background-color:#0C6; border-collapse:collapse; margin:0 auto;
+  -moz-box-shadow:    1px 1px 0px 0px #000;
+  -webkit-box-shadow: 1px 1px 0px 0px #000;
+  box-shadow:         1px 1px 0px 0px #000;
+filter: progid:DXImageTransform.Microsoft.Shadow(color=black,direction=135,strength=1);
+}
+table#board td{width:36px; height:36px; border:1px solid black;
+text-align:center;
+color:#666;
+cursor:pointer;
+}
+table#board td div{
+	margin:1px 0 0 1px;
+	height:34px; width:34px;
+	border-radius: 17px;
+	-webkit-border-radius: 17px;
+	-moz-border-radius: 17px;
+}
+table#board td.b div{background-color:black;
+  -moz-box-shadow:    1px 1px 0px 0px #fff;
+  -webkit-box-shadow: 1px 1px 0px 0px #fff;
+  box-shadow:         1px 1px 0px 0px #fff;
+filter: progid:DXImageTransform.Microsoft.Shadow(color=white,direction=135,strength=1);
+cursor:no-drop;
+}
+table#board td.w div{background-color:white;
+  -moz-box-shadow:    1px 1px 0px 0px #000;
+  -webkit-box-shadow: 1px 1px 0px 0px #000;
+  box-shadow:         1px 1px 0px 0px #000;
+filter: progid:DXImageTransform.Microsoft.Shadow(color=black,direction=135,strength=1);
+cursor:no-drop;
+}
+table#board td.c div{
+	margin:1px 0 0 1px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	background-color:#3F0;
+}
+/*방금놓은돌*/
+table#board td.n{
+	background-color:#FC6;
+}
+
+
+
+.labelBlack{ background-color:#000; color:#CCC;}
+.labelWhtie{ background-color:#fff; color:#333;}
+
+#scoreBoard{ border-collapse:collapse; margin:0 auto; margin-bottom:10px;}
+#scoreBoard td,#scoreBoard th{border:1px solid gray;  padding:2px;}
+
+#divTurn{
+	text-align:center;
+	 width:30px; height:30px; margin:0 auto; line-height:30px; font-size:20px;
+border:1px solid gray;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 145x;
+}
+
+.btn{border:1px solid black; border-color:#CCC #333 #333 #CCC;}
